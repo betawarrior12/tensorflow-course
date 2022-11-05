@@ -51,7 +51,7 @@ print(model.summary())
 new_model = keras.models.Sequential()
 for layer in model.layers:
     new_model.add(layer)
-    
+
 # convert sequential to functional
 inputs = keras.Input(shape=(28,28))
 x = new_model.layers[0](inputs)

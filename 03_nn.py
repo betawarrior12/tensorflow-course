@@ -80,7 +80,7 @@ label0 = np.argmax(pred0)
 print(label0)
 
 # call argmax for multiple labels
-pred05s = predictions[0:5]
+pred05s = predictions[:5]
 print(pred05s.shape)
 label05s = np.argmax(pred05s, axis=1)
 print(label05s)
